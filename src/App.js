@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+// import Hook_examples from './Hook_examples';
+import Calculator from './Calculator';
+// import './calstyle.css';
+// import './tic_tac_toe.css';
+// import Tic_tac_toe from './Tic_tac_toe';
+// import Test from './Test';
+// import Clock from './Clock';
+// import UseEffect from './UseEffect';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Tic_tac_toe /> */}
+      {/* <Hook_examples /> */}
+      <Calculator />
     </div>
   );
 }
-
 export default App;

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.App textarea {
+  background-color: #f4f7f8;
+  resize: none;
+}
+
+.w-50 {
+  width: 90%!important;
+}
