@@ -15,7 +15,6 @@ const Hook_examples = (props) => {
     return (
         <>
             <h1>{props.title}</h1>
-            <hr/>
             <h2>Result: {result}</h2>
             <input type="text" placeholder="Enter first number" onChange={(e) => setNumber({num1: +e.target.value, num2: number.num2})}/>
             <br/>
