@@ -1,12 +1,11 @@
 import React from 'react';
 import { useEffect, useState, useCallback } from 'react';
 
-const Hook_examples = () => {
+const Hook_examples = (props) => {
     const [number, setNumber] = useState({num1: 0, num2: 0});
     const [result, setResult] = useState(0);
 
     useEffect(()=> {
-        console.log(number);
     }, [number, result]);
 
     const callBk = useCallback(() => {
@@ -15,6 +14,8 @@ const Hook_examples = () => {
 
     return (
         <>
+            <h1>{props.title}</h1>
+            <hr/>
             <h2>Result: {result}</h2>
             <input type="text" placeholder="Enter first number" onChange={(e) => setNumber({num1: +e.target.value, num2: number.num2})}/>
             <br/>

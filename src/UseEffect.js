@@ -1,6 +1,6 @@
 import React, {useState, useEffect, Fragment} from 'react';
 
-const UseEffect = () => {
+const UseEffect = (props) => {
 
     const [count, setCount] = useState(0)
 
@@ -10,6 +10,8 @@ const UseEffect = () => {
     return (
         <Fragment>
             <div>
+                <h1>{props.title}</h1>
+                <hr />
                 <p>{count}</p>
                 <button onClick={() => setCount(count + 1)}>Incr</button>
             </div>
